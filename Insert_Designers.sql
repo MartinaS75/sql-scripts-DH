@@ -1,0 +1,26 @@
+INSERT INTO Designers (FirstName, LastName, Bio)
+VALUES 
+	('Scott', 'Almes', 'Scott Almes je známý designér stolních her.'),
+	('Michal','Štach','Michal Elwen Štach je spoluautorem hry Ztracený ostrov Arnak. S manželkou Mín tvoøí vysoce kreativní designérské duo.'),
+	('Bruno','Cathala','Francouzský herní designér, který žije blízko Ženevy'),
+	('Marco','Portugal','Brazilský herní designér. V souèasné dobì pracuje jako herní designér a vývojáø pro CMON Limited.'),
+	('Alex','Olteanu','Narozen v Brazílii a v souèasné dobì pracuje jako Game Designer a Game Developer ve spoleènosti Cool Mini.'),
+	('Simone','Luciani','Je známý svými složitými, støednì až støednì tìžkými eury. Získal øadu prestižních ocenìní a v souèasné dobì pracuje ve spoleènosti Cranio Creations jako vedoucí vývoje.'),
+	('Dávid','Turczi','Herní designér z Maïarska. Je známý svými komplexními eury.'),
+	('Reiner','Knizia','Je známý jako jeden z nejplodnìjších svìtových herních designérù'),
+	('Molly','Johnson',''),
+	('Robert','Melvin',''),
+	('Shawn','Stankewich','V souèasnosti žije v Seattlu, kde je aktivním èlenem Playtest Northwest a designérské skupiny Seattle Board Game Designers. Shawn je spolupoøadatelem podcastu Flatout at the Table o mechanikách deskových her.'),
+	('Matt','Leacock','Je herní designér, který je nejlépe známý pro tvorbu velmi populární hry Pandemic.'),
+	('Ashwin','Kamath',''),
+	('Clarence','Simpson',''),
+	('David','Chircop','Návrháø deskových her a videoher'),
+	('Kamil','Cieœla','Kamil Sanex Cieœla je herní designér a vydavatel v Awaken Realms. Tvùrce PrzyStole.org, polské stránky o hrách ameritrashes. Ve hrách miluje tìžké klima a hluboký pøíbìh.'),
+	('Petr','Vojtìch','Designér z Prahy.'),
+	('','',''),
+	('','',''),
+	('','',''),
+	('','',''),
+	('','',''),
+	('','','')
+	;

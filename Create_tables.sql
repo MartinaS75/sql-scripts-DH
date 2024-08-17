@@ -46,4 +46,33 @@ CREATE TABLE GameMechanics (
     FOREIGN KEY (MechanicID) REFERENCES Mechanics(MechanicID) -- Definice cizího klíèe na tabulku Mechanics
 );
 
+CREATE TABLE Artists (
+    ArtistID INT PRIMARY KEY IDENTITY(1,1),  -- Primární klíè
+    FirstName NVARCHAR(50),                  -- Jméno umìlce
+    LastName NVARCHAR(50),                   -- Pøíjmení umìlce
+    [Bio] NVARCHAR(MAX)                      -- Krátký životopis umìlce, volitelný
+);
+
+CREATE TABLE GameArtists (
+    GameID INT,            -- Cizí klíè na tabulku Games
+    ArtistID INT,          -- Cizí klíè na tabulku Artists
+    PRIMARY KEY (GameID, ArtistID),  -- Kombinovaný primární klíè (garantuje jedineènost)
+    FOREIGN KEY (GameID) REFERENCES Games(GameID),   -- Definice cizího klíèe na tabulku Games
+    FOREIGN KEY (ArtistID) REFERENCES Artists(ArtistID)  -- Definice cizího klíèe na tabulku Artists
+);
+
+--Poznámka
+-- INSERT INTO GameArtists (GameID, ArtistID)
+--VALUES (1, 1),  -- Settlers of Catan má umìlce Alice Johnson
+  --     (2, 2);  -- Ticket to Ride má umìlce Bob Brown
+
+
+CREATE TABLE GameDesigners (
+    GameID INT,            -- Cizí klíè na tabulku Games
+    DesignerID INT,        -- Cizí klíè na tabulku Designers
+    PRIMARY KEY (GameID, DesignerID),  -- Kombinovaný primární klíè (garantuje jedineènost)
+    FOREIGN KEY (GameID) REFERENCES Games(GameID),   -- Definice cizího klíèe na tabulku Games
+    FOREIGN KEY (DesignerID) REFERENCES Designers(DesignerID)  -- Definice cizího klíèe na tabulku Designers
+);
+
 
