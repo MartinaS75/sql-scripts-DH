@@ -75,4 +75,22 @@ CREATE TABLE GameDesigners (
     FOREIGN KEY (DesignerID) REFERENCES Designers(DesignerID)  -- Definice cizího klíèe na tabulku Designers
 );
 
+CREATE TABLE Publishers (
+    PublisherID INT PRIMARY KEY IDENTITY(1,1),
+    PublisherName NVARCHAR(255) NOT NULL,
+    Country NVARCHAR(100), -- Volitelnì, napø. zemì vydavatele
+    EstablishedYear INT -- Volitelnì, rok založení
+);
+
+ALTER TABLE Games
+ADD PublisherID INT;
+
+ALTER TABLE Games
+ADD CONSTRAINT FK_Games_Publishers
+FOREIGN KEY (PublisherID)
+REFERENCES Publishers (PublisherID);
+
+Alter table Games
+DROP COLUMN Publisher;
+
 
